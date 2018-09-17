@@ -1,9 +1,4 @@
-# Big Data Analytics CSE 545 - Project
-# Team : Data Sentinels
-# Aadarsh Kashyap -110782182
-# Amit Gupta - 110900982
-# Gayathri Shivakumar - 110945338
-# Kanishta Agarwal - 110931724
+
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,10 +11,10 @@ import mmh3
 import os
 import re
 
-Training_file1 = "/home/kanisht/Documents/BigDataProject/training_first.csv"
-Training_file2 = "/home/kanisht/Documents/BigDataProject/training_second.csv"
-feature_list = "/home/kanisht/Documents/BigDataProject/total_features.csv"
-Training_file3 = "/home/kanisht/Documents/BigDataProject/tweets_train"
+Training_file1 = "/home/amit/Documents/BigDataProject/training_first.csv"
+Training_file2 = "/home/amit/Documents/BigDataProject/training_second.csv"
+feature_list = "/home/amit/Documents/BigDataProject/total_features.csv"
+Training_file3 = "/home/amit/Documents/BigDataProject/tweets_train"
 
 # This method calculates the TF-IDF of given tweets and return vector of 
 # TF-IDF value
@@ -118,7 +113,7 @@ def Naive_Bayes(label, tweet):
 
 
 stopWords = []
-STOP_WORDS = "/home/kanisht/Documents/BigDataProject/stopWords" 
+STOP_WORDS = "/home/amit/Documents/BigDataProject/stopWords" 
 
 #sc = SparkContext(appName = "Myapp")
 
@@ -414,7 +409,7 @@ for word in trainingdata.collect():
 		add(word.lower())
 
 # This is to predict new tweets
-data = sc.textFile("/home/kanisht/Documents/BigDataProject/tweets_test");
+data = sc.textFile("/home/amit/Documents/BigDataProject/tweets_test");
 model_domain = train_domain_model("predict",sc)
 model_sentiment = train_sentiment_models("predict", sc)
 
