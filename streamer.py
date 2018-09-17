@@ -2,10 +2,10 @@ import sys
 import tweepy
 import json
 
-consumer_key = 'CVUDTjqhfAD4FTWAt2PaJXUvv'
-consumer_secret = 'RZtR7ugKaTIw8k8I1ww0fNKvPox2PVOlj4jhtKYHgHmKQxfL4C'
-access_key = '797551482765770752-d16fT8KuByxp54wBfcT2BdAZkjuwCpQ'
-access_secret = 'WRnHiYAUcpRVuF4vhG9SCw0lWJRqZ1CBpagyUqE26ddGG'
+consumer_key = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+access_key = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+access_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
